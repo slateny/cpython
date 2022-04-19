@@ -4,16 +4,16 @@
 #
 
 # You can set these variables from the command line.
-PYTHON       = python3
-VENVDIR      = ./venv
-SPHINXBUILD  = PATH=$(VENVDIR)/bin:$$PATH sphinx-build
-SPHINXLINT   = PATH=$(VENVDIR)/bin:$$PATH sphinx-lint
-BLURB        = PATH=$(VENVDIR)/bin:$$PATH blurb
-PAPER        =
-SOURCES      =
-DISTVERSION  = $(shell $(PYTHON) tools/extensions/patchlevel.py)
+PYTHON              = python3
+VENVDIR             = ./venv
+SPHINXBUILD         = PATH=$(VENVDIR)/bin:$$PATH sphinx-build
+SPHINXLINT          = PATH=$(VENVDIR)/bin:$$PATH sphinx-lint
+BLURB               = PATH=$(VENVDIR)/bin:$$PATH blurb
+PAPER               =
+SOURCES             =
+DISTVERSION         = $(shell $(PYTHON) tools/extensions/patchlevel.py)
 SPHINXERRORHANDLING = -W
-SERVE_PORT   =
+SERVE_PORT          =
 
 # Internal variables.
 PAPEROPT_a4     = -D latex_elements.papersize=a4paper
@@ -28,24 +28,24 @@ ALLSPHINXOPTS = -b $(BUILDER) -d build/doctrees $(PAPEROPT_$(PAPER)) \
 
 help:
 	@echo "Please use \`make <target>' where <target> is one of"
-	@echo "  clean      to remove build files"
-	@echo "  venv       to create a venv with necessary tools"
-	@echo "  html       to make standalone HTML files"
-	@echo "  htmlview   to open the index page built by the html target in your browser"
-	@echo "  htmlhelp   to make HTML files and a HTML help project"
-	@echo "  latex      to make LaTeX files, you can set PAPER=a4 or PAPER=letter"
-	@echo "  text       to make plain text files"
-	@echo "  texinfo    to make Texinfo file"
-	@echo "  epub       to make EPUB files"
-	@echo "  changes    to make an overview over all changed/added/deprecated items"
-	@echo "  linkcheck  to check all external links for integrity"
-	@echo "  coverage   to check documentation coverage for library and C API"
-	@echo "  doctest    to run doctests in the documentation"
+	@echo "  clean         to remove build files"
+	@echo "  venv          to create a venv with necessary tools"
+	@echo "  html          to make standalone HTML files"
+	@echo "  htmlview      to open the index page built by the html target in your browser"
+	@echo "  htmlhelp      to make HTML files and a HTML help project"
+	@echo "  latex         to make LaTeX files, you can set PAPER=a4 or PAPER=letter"
+	@echo "  text          to make plain text files"
+	@echo "  texinfo       to make Texinfo file"
+	@echo "  epub          to make EPUB files"
+	@echo "  changes       to make an overview over all changed/added/deprecated items"
+	@echo "  linkcheck     to check all external links for integrity"
+	@echo "  coverage      to check documentation coverage for library and C API"
+	@echo "  doctest       to run doctests in the documentation"
 	@echo "  pydoc-topics  to regenerate the pydoc topics file"
-	@echo "  dist       to create a \"dist\" directory with archived docs for download"
-	@echo "  suspicious to check for suspicious markup in output text"
-	@echo "  check      to run a check for frequent markup errors"
-	@echo "  serve      to serve the documentation on the localhost (8000)"
+	@echo "  dist          to create a \"dist\" directory with archived docs for download"
+	@echo "  suspicious    to check for suspicious markup in output text"
+	@echo "  check         to run a check for frequent markup errors"
+	@echo "  serve         to serve the documentation on the localhost (8000)"
 
 build:
 	-mkdir -p build
