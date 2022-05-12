@@ -1122,8 +1122,7 @@ FTPHandler Objects
 
 .. method:: FTPHandler.ftp_open(req)
 
-   Open the FTP file indicated by *req*. The login is always done with empty
-   username and password.
+   Open the FTP file indicated by *req*.
 
 
 .. _cacheftp-handler-objects:
